@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stolen - Moda Urbana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="announcement-bar">
+            <div class="announcement-content">
+                <i class="fas fa-truck"></i>
+                <span>ENVÍO GRATIS POR COMPRAS SUPERIORES A $350.000</span>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="nav-menu" id="navMenu">
+                        <a href="#" class="nav-link">Hombre</a>
+                        <a href="#" class="nav-link">Mujer</a>
+                        <a href="#" class="nav-link">Camisetas</a>
+                        <a href="#" class="nav-link">Pantalones</a>
+                    </div>
+                </div>
+                
+                <div class="logo">
+                    <h1>STOLEN</h1>
+                </div>
+                
+                <div class="nav-right">
+                    <button class="search-toggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#" class="nav-link">Iniciar sesión</a>
+                    <button class="cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">STOLEN</h1>
+            <p class="hero-subtitle">Moda urbana que define tu estilo</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Moda urbana">
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Ver todo</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Hoodie Gris">
+                        <div class="product-badge">Oferta</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hoodie Gris Urban</h3>
+                        <div class="product-price">
+                            <span class="price-original">$200.000,00</span>
+                            <span class="price-sale">$150.000,00</span>
+                        </div>
+                        <button class="add-to-cart" data-product="hoodie-gris">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pantalón Cargo Negro">
+                        <div class="product-badge sold-out">Agotado</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pantalón Cargo Negro</h3>
+                        <div class="product-price">
+                            <span class="price-original">$150.000,00</span>
+                            <span class="price-sale">$120.000,00</span>
+                        </div>
+                        <button class="add-to-cart" data-product="pantalon-cargo" disabled>Agotado</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Camiseta Oversize Blanca">
+                        <div class="product-badge">Oferta</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Oversize Blanca</h3>
+                        <div class="product-price">
+                            <span class="price-original">$100.000,00</span>
+                            <span class="price-sale">$65.000,00</span>
+                        </div>
+                        <button class="add-to-cart" data-product="camiseta-blanca">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pantalón Cargo Gris">
+                        <div class="product-badge sold-out">Agotado</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pantalón Cargo Gris Urban</h3>
+                        <div class="product-price">
+                            <span class="price-original">$150.000,00</span>
+                            <span class="price-sale">$120.000,00</span>
+                        </div>
+                        <button class="add-to-cart" data-product="pantalon-gris" disabled>Agotado</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583743814966-8936f37f4678?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Camiseta Oversize Marfil">
+                        <div class="product-badge">Oferta</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Oversize Marfil</h3>
+                        <div class="product-price">
+                            <span class="price-original">$100.000,00</span>
+                            <span class="price-sale">$65.000,00</span>
+                        </div>
+                        <button class="add-to-cart" data-product="camiseta-marfil">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1565084888279-aca607ecce0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pantalón Cargo Azul">
+                        <div class="product-badge">Oferta</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pantalón Cargo Azul</h3>
+                        <div class="product-price">
+                            <span class="price-original">$150.000,00</span>
+                            <span class="price-sale">$120.000,00</span>
+                        </div>
+                        <button class="add-to-cart" data-product="pantalon-azul">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <button class="view-all-btn">Ver todo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-section">
+                <h2 class="category-title">Pantalones</h2>
+                <div class="products-carousel">
+                    <div class="carousel-container">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pantalón Cargo Negro">
+                                <div class="product-badge sold-out">Agotado</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Pantalón Cargo Negro</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$150.000,00</span>
+                                    <span class="price-sale">$120.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pantalón Cargo Gris">
+                                <div class="product-badge sold-out">Agotado</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Pantalón Cargo Gris Urban</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$150.000,00</span>
+                                    <span class="price-sale">$120.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1565084888279-aca607ecce0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pantalón Cargo Azul">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Pantalón Cargo Azul</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$150.000,00</span>
+                                    <span class="price-sale">$120.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" data-carousel="pantalones">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" data-carousel="pantalones">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="view-all-container">
+                    <button class="view-all-btn">Ver todo</button>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h2 class="category-title">Camisetas</h2>
+                <div class="products-carousel">
+                    <div class="carousel-container">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Camiseta Oversize Blanca">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Camiseta Oversize Blanca</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$100.000,00</span>
+                                    <span class="price-sale">$65.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1583743814966-8936f37f4678?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Camiseta Oversize Marfil">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Camiseta Oversize Marfil</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$100.000,00</span>
+                                    <span class="price-sale">$65.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Camiseta Oversize Beige">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Camiseta Oversize Beige</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$100.000,00</span>
+                                    <span class="price-sale">$65.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" data-carousel="camisetas">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" data-carousel="camisetas">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="view-all-container">
+                    <button class="view-all-btn">Ver todo</button>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h2 class="category-title">Mujer</h2>
+                <div class="products-carousel">
+                    <div class="carousel-container">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Crop Top Marfil">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Crop Top Marfil</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$60.000,00</span>
+                                    <span class="price-sale">$40.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pantalón Mujer Baggy Negro">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Pantalón Mujer Baggy Negro</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$120.000,00</span>
+                                    <span class="price-sale">$100.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Crop Top Beige">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Crop Top Beige</h3>
+                                <div class="product-price">
+                                    <span class="price-original">$60.000,00</span>
+                                    <span class="price-sale">$40.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" data-carousel="mujer">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" data-carousel="mujer">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="view-all-container">
+                    <button class="view-all-btn">Ver todo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter-title">Déjanos tu correo y recibe un regalo</h2>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Correo electrónico" required>
+                <button type="submit">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>STOLEN</h3>
+                    <p>Moda urbana que define tu estilo</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de envío</a>
+                    <a href="#">Política de reembolso</a>
+                    <a href="#" id="contactInfo">Información de contacto</a>
+                    <a href="#">Términos del servicio</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, STOLEN Tecnología de Shopify</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/573028143855" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Realizar Pago</h2>
+            <div class="payment-options">
+                <div class="payment-method">
+                    <h3>Pago con Nequi</h3>
+                    <p>Escanea el código QR con tu app Nequi</p>
+                    <div class="qr-container">
+                        <img src="assets/images/nequi_qr.png" alt="QR Nequi" class="qr-code">
+                    </div>
+                    <p class="payment-instructions">
+                        1. Abre tu app Nequi<br>
+                        2. Escanea este código QR<br>
+                        3. Confirma el monto<br>
+                        4. ¡Listo!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Carrito de compras</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: $<span id="cartTotal">0</span></strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceder al pago</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
